@@ -42,6 +42,7 @@ provided to us by Filippos Kominis.
 - Conditional Effects
 
 ###muddy-children-kg
+Muddy Children Puzzle by (Fagin et al. 1995)
 
 - Conditional Effects
 
@@ -50,32 +51,43 @@ provided to us by Filippos Kominis.
 
 - Conditional Effects
 
-MuddyChild(n, m) is a reformulation of MuddyChildren
-where a particular child must find out whether he is muddy
-or not. For this he can ask individually each other child i
-whether i knows that he is muddy, with all other children
-listening the response.
-
-Muddy Children Puzzle by (Fagin et al. 1995)
+>MuddyChild(n, m) is a reformulation of MuddyChildren
+>where a particular child must find out whether he is muddy
+>or not. For this he can ask individually each other child i
+>whether i knows that he is muddy, with all other children
+>listening the response.
 
 ###sum-kg
 
 - Conditional Effects
 
-Sum(n) is a domain based on ”What is the Sum?” (van Ditmarsch,
-van der Hoek, and Kooi 2007b), which in turn borrows
-from the ”Sum and Product Riddle” (van Ditmarsch,
-Ruan, and Verbrugge 2008) and the Muddy Children. There
-are three agents a, b, and c, each one with a number on his
-forehead between 1 and n. It is known that one of the numbers
-must be the sum of the other two. In addition, each agent
-can see the numbers on the other agent’s foreheads, and can
+>Sum(n) is a domain based on ”What is the Sum?” (van Ditmarsch,
+>van der Hoek, and Kooi 2007b), which in turn borrows
+>from the ”Sum and Product Riddle” (van Ditmarsch,
+>Ruan, and Verbrugge 2008) and the Muddy Children. There
+>are three agents a, b, and c, each one with a number on his
+>forehead between 1 and n. It is known that one of the numbers
+>must be the sum of the other two. In addition, each agent
+>can see the numbers on the other agent’s foreheads, and can
 
 ###wordrooms
 
 - Conditional Effects
 
 ##ghosh-etal-JAR:
+The controller verification problems by Ghosh, Dasgupta and Ramesh
+("Automated Planning as an Early Verification Tool for Distributed
+Control", Journal of Automated Reasoning vol. 54, 2015), sourced from
+http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz, and the
+equivalent compiled problems: "cc1" is the compilation into STRIPS
+originally proposed by Ghosh et al.; "cc2" is the compilation into
+STRIPS planning with axioms.
 
+###acc-cc2-ghosh-etal
+###doorexample-broken-ghosh-etal
+###doorexample-fixed-ghosh-etal
+###grid-cc2-ghosh-etal
+
+## IPC Domains
 ###optical-telegraphs
 ###philosophers
