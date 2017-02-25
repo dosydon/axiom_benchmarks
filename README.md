@@ -26,14 +26,23 @@ provided to us by Filippos Kominis.
 
 ###collab-and-comm-kg
 
+- Conditional Effects
+
+###muddy-children-kg
+
+- Conditional Effects
+
+
 ###muddy-child-kg
+
+- Conditional Effects
+
 MuddyChild(n, m) is a reformulation of MuddyChildren
 where a particular child must find out whether he is muddy
 or not. For this he can ask individually each other child i
 whether i knows that he is muddy, with all other children
 listening the response.
 
-###muddy-children-kg
 Muddy Children Puzzle by (Fagin et al. 1995)
 
 ###sum-kg
@@ -50,6 +59,8 @@ must be the sum of the other two. In addition, each agent
 can see the numbers on the other agent’s foreheads, and can
 
 ###wordrooms
+
+- Conditional Effects
 
 ##ghosh-etal-JAR:
 
