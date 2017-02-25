@@ -17,7 +17,20 @@ axioms but without conditional effects.
 
 - Functional STRIPS
 
-##kominis-geffner:
+###trapping game
+>As an example of a pseudo-adversarial domain with a more
+>complex opponent strategy, we consider a game of two players,
+>called the “blocker” and the “cat”. The cat moves from
+>node to node on a graph (G), always moving to a node on
+>a shortest unblocked path to one of a set of designated exit
+>nodes. (To ensure deterministic moves, ties are broken by
+>an arbitrary ordering of the nodes.) In between each move
+>of the cat, the blocker can permanently block a node in the
+>graph (though not the node the cat currently occupies). The
+>cat wins if it reaches an exit, and the blocker wins if the cat is
+>trapped (i.e., no longer able to reach an exit).
+
+##Domains by Filipos Kominis and Hector Geffner (ICAPS 2015)
 Problems by Filippos Kominis and Hector Geffner, from their paper
 "Beliefs in Multiagent Planning: From One Agent to Many" (ICAPS 2015).
 These are cooperative multi-agent planning with partial observability
