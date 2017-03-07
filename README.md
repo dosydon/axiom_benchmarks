@@ -15,8 +15,6 @@ axioms but without conditional effects.
 
 ###mincut
 
-- Functional STRIPS
-
 ###acc-cc2-ghosh-etal
 A reformulation of acc-cc1-ghosh-etal using axioms.
 ###doorexample-broken-ghosh-etal
@@ -48,17 +46,10 @@ provided to us by Filippos Kominis.
 
 ###collab-and-comm-kg
 
-- Conditional Effects
-
 ###muddy-children-kg
 Muddy Children Puzzle by (Fagin et al. 1995)
 
-- Conditional Effects
-
-
 ###muddy-child-kg
-
-- Conditional Effects
 
 >MuddyChild(n, m) is a reformulation of MuddyChildren
 >where a particular child must find out whether he is muddy
@@ -67,8 +58,6 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >listening the response.
 
 ###sum-kg
-
-- Conditional Effects
 
 >Sum(n) is a domain based on ”What is the Sum?” (van Ditmarsch,
 >van der Hoek, and Kooi 2007b), which in turn borrows
@@ -80,8 +69,6 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >can see the numbers on the other agent’s foreheads, and can
 
 ###wordrooms
-
-- Conditional Effects
 
 ##ghosh-etal-JAR:
 The controller verification problems by Ghosh, Dasgupta and Ramesh
@@ -114,5 +101,31 @@ http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 >search occurs automatically for an available handler.
 
 ## IPC Domains
+Domains with derived predicates used in IPC-4.
+For details, please see Hoffmann, Jörg, et al
+("Engineering benchmarks for planning: the domains used in the deterministic part of IPC-4", Journal of Artificial Intelligence Research 26, 2006).
+###psr-middle
+>The task in PSR (power supply restoration) is to reconfigure a faulty power distribution
+>network so as to resupply customers affected by the faults. The network consists of electric
+>lines connected by switches and fed via a number of power sources that are equipped with circuitbreakers.
+>When faults occur, the circuit-breakers of the sources feeding the faulty lines open to
+>protect the network, leaving not only these lines but also many healthy ones un-supplied. The network
+>needs to be reconfigured by opening and closing switches and circuit-breakers in such a way
+>as to resupply the healthy portions. Unreliable fault sensors and switches lead to uncertainty about
+>the state of the network. Furthermore, breakdown costs that depend on various parameters need to
+>be optimized under constraints on the capacity of sources and lines. The application is a topic of ongoing
+>interest in the field of power distribution, and has been investigated by the AI community for
+>a long time, including from an AI planning standpoint (Thi´ebaux, Cordier, Jehl, & Krivine, 1996;
+>Thi´ebaux & Cordier, 2001; Bertoli, Cimatti, Slaney, & Thi´ebaux, 2002; Bonet & Thi´ebaux, 2003).
+
+###psr-middle-compiled
+A compiled, axiom-free version of psr-middle.
+
 ###optical-telegraphs
+> Developed by Stefan Edelkamp. Planners are asked to find deadlocks in communication protocols, translated into PDDL from the Promela specification language. Deadlocks were specified via blocked transitions and processes. The representation chosen for the processes are finite state transition systems, while communication channels are modelled by queues with moving head and tail pointers. The communication protocols used in IPC-4 were the dining philosophers problem, as well as an optical telegraph routing problem.
+###optical-telegraphs-compiled
+A compiled, axiom-free version of optical-telegraphs.
+
 ###philosophers
+###philosophers-compiled
+A compiled, axiom-free version of philosophers.
