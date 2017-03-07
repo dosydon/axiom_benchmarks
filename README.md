@@ -15,8 +15,6 @@ axioms but without conditional effects.
 
 ###mincut
 
-- Functional STRIPS
-
 ###acc-cc2-ghosh-etal
 A reformulation of acc-cc1-ghosh-etal using axioms.
 ###doorexample-broken-ghosh-etal
@@ -48,17 +46,10 @@ provided to us by Filippos Kominis.
 
 ###collab-and-comm-kg
 
-- Conditional Effects
-
 ###muddy-children-kg
 Muddy Children Puzzle by (Fagin et al. 1995)
 
-- Conditional Effects
-
-
 ###muddy-child-kg
-
-- Conditional Effects
 
 >MuddyChild(n, m) is a reformulation of MuddyChildren
 >where a particular child must find out whether he is muddy
@@ -67,8 +58,6 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >listening the response.
 
 ###sum-kg
-
-- Conditional Effects
 
 >Sum(n) is a domain based on ”What is the Sum?” (van Ditmarsch,
 >van der Hoek, and Kooi 2007b), which in turn borrows
@@ -80,8 +69,6 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >can see the numbers on the other agent’s foreheads, and can
 
 ###wordrooms
-
-- Conditional Effects
 
 ##ghosh-etal-JAR:
 The controller verification problems by Ghosh, Dasgupta and Ramesh
@@ -114,5 +101,18 @@ http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 >search occurs automatically for an available handler.
 
 ## IPC Domains
+###psr-middle
+
+>Developed by Sylvie Thiebaux and Jörg Hoffmann. Planners must resupply a number of lines in a faulty electricity network. The flow of electricity through the network, at any point in time, is given by a transitive closure over the network connections, subject to the states of the switches and electricity supply devices. The domain is therefore a good example of the usefulness of derived predicates in real-world applications.
+
+###psr-middle-compiled
+A comiled, axiom-free version of psr-middle.
+
 ###optical-telegraphs
+> Developed by Stefan Edelkamp. Planners are asked to find deadlocks in communication protocols, translated into PDDL from the Promela specification language. Deadlocks were specified via blocked transitions and processes. The representation chosen for the processes are finite state transition systems, while communication channels are modelled by queues with moving head and tail pointers. The communication protocols used in IPC-4 were the dining philosophers problem, as well as an optical telegraph routing problem.
+###optical-telegraphs-compiled
+A comiled, axiom-free version of optical-telegraphs.
+
 ###philosophers
+###philosophers-compiled
+A comiled, axiom-free version of philosophers.
