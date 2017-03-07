@@ -87,12 +87,18 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 The controller verification problems by Ghosh, Dasgupta and Ramesh
 ("Automated Planning as an Early Verification Tool for Distributed
 Control", Journal of Automated Reasoning vol. 54, 2015), sourced from
-http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz, and the
-equivalent compiled problems: "cc1" is the compilation into STRIPS
-originally proposed by Ghosh et al.; "cc2" is the compilation into
-STRIPS planning with axioms.
-
+http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 ###acc-cc1-ghosh-etal
+
+>The ACC is designed to take away the burden of adjusting the speed of the vehicle from the driver, mostly
+>under light traffic conditions. The ACC operates in two modes - the speed control mode and the time gap
+>mode. In the speed control mode, the main functionality of ACC is to maintain the speed of the vehicle
+>(termed ego vehicle) at a set constant speed v ref . In the time gap mode, the speed and distance of nearby
+>vehicles (termed subject vehicles) are taken into consideration to maintain a safe time gap with the vehicles
+>in the front. The time gap is defined as the time taken by a following vehicle to cover the distance from a
+>leading vehicle at current speed. The speed control mode may be active when there is no obstructing traffic.
+>The time gap mode may be active whenever obstructing traffic is detected by the vehicle’s radar.
+
 ###doorexample-broken-ghosh-etal-noaxioms
 ###doorexample-fixed-ghosh-etal-noaxioms
 ###grid-cc1-ghosh-etal
