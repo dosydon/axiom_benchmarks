@@ -17,6 +17,15 @@ axioms but without conditional effects.
 
 - Functional STRIPS
 
+###acc-cc2-ghosh-etal
+A reformulation of acc-cc1-ghosh-etal using axioms.
+###doorexample-broken-ghosh-etal
+A reformulation of doorexample-broken-ghosh-etal-noaxioms using axioms.
+###doorexample-fixed-ghosh-etal
+A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
+###grid-cc2-ghosh-etal
+A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
+
 ###trapping game
 >As an example of a pseudo-adversarial domain with a more
 >complex opponent strategy, we consider a game of two players,
@@ -83,10 +92,10 @@ equivalent compiled problems: "cc1" is the compilation into STRIPS
 originally proposed by Ghosh et al.; "cc2" is the compilation into
 STRIPS planning with axioms.
 
-###acc-cc2-ghosh-etal
-###doorexample-broken-ghosh-etal
-###doorexample-fixed-ghosh-etal
-###grid-cc2-ghosh-etal
+###acc-cc1-ghosh-etal
+###doorexample-broken-ghosh-etal-noaxioms
+###doorexample-fixed-ghosh-etal-noaxioms
+###grid-cc1-ghosh-etal
 
 ## IPC Domains
 ###optical-telegraphs
