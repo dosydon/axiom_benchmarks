@@ -103,6 +103,16 @@ http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 ###doorexample-fixed-ghosh-etal-noaxioms
 ###grid-cc1-ghosh-etal
 
+>The GRID domain is a synthetic planning domain loosely based on cellular automata and
+>incorporates a parallel depth first search protocol for added variety. A problem instance in
+>this domain consists of a finite matrix of connected compute elements (processors) which
+>process the jobs submitted to them (Fig. 7). Each processor in the grid has four communica-
+>tion ports through which it may be connected to its neighboring processors. Jobs are created
+>in a separate set of elements called as the dispenser units which are connected to some of
+>the processors in the GRID via their communication ports. Once created, each new job is
+>transferred to a processor (or rejected by the grid as a whole) after a distributed depth-first
+>search occurs automatically for an available handler.
+
 ## IPC Domains
 ###optical-telegraphs
 ###philosophers
