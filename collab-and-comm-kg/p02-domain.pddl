@@ -1,4 +1,5 @@
 (define (domain dhmiourgimeno)
+(:requirements :conditional-effects)
 (:predicates
 (r1as0) 
 (r1as1) 
