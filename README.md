@@ -2,6 +2,7 @@
 
 ## Domains by Ivankovic and Haslum(IJCAI, 2015)
 Domains by Franc Ivankovic and Patric Haslum, used under CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+Domains were sourced from (http://users.cecs.anu.edu.au/~patrik/tmp/fd-axiom-aware.tar.gz).
 
 ###sokoban-axioms:
 A formulation of the Sokoban domain using axioms. There are two
@@ -14,15 +15,6 @@ The PSR middle-sized problem set from IPC 2004, formulation with
 axioms but without conditional effects.
 
 ###mincut
-
-###acc-cc2-ghosh-etal
-A reformulation of acc-cc1-ghosh-etal using axioms.
-###doorexample-broken-ghosh-etal
-A reformulation of doorexample-broken-ghosh-etal-noaxioms using axioms.
-###doorexample-fixed-ghosh-etal
-A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
-###grid-cc2-ghosh-etal
-A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 
 ###trapping game
 >As an example of a pseudo-adversarial domain with a more
@@ -42,9 +34,33 @@ Problems by Filippos Kominis and Hector Geffner, from their paper
 "Beliefs in Multiagent Planning: From One Agent to Many" (ICAPS 2015).
 These are cooperative multi-agent planning with partial observability
 and nested beliefs, compiled into planning with axioms. They were
-provided to us by Filippos Kominis.
+source from (http://www.dtic.upf.edu/~fkominis/).
 
 ###collab-and-comm-kg
+>As a third example, we consider a scenario where two agents
+>volunteer information to each other in order to accomplish
+>a task faster that would otherwise be possible without information
+>exchange. It is inspired in the BW4T environment,
+>a proposed testbed for joint activity (Johnson et al. 2009).
+>There is a corridor of four rooms, p1, p2, p3 and p4 as in the
+>previous example, four blocks b1, . . . , b4 that are in some
+>of the rooms, and two agents a and b that can move back
+>and forth along this corridor. Initially, the two agents are
+>in p2 and do not know where the blocks are (they are not
+>in p2). When an agent gets into a room, he can see which
+>blocks are in the room if any. The goal of the planning problem
+>is for agent a to know the position of block b1, and for
+>agent b to know the position of block b2. A shortest plan
+>for the problem involves six steps: one agent, say a, has to
+>move to p1, the other agent has to move to p3, they both
+>must sense which blocks are in these rooms, and then they
+>must exchange the relevant information. At that point, the
+>goal would be achieved whether or not the information exchanged
+>explicitly conveys the location of the target blocks.
+>Indeed, if agent a does not see block b1 in p1 and agent b
+>doesn’t see this block either at p3, agent a will then know
+>that block b1 must be in p4 once b conveys to a the relevant
+>piece of information; in this case ¬Kbin(b1, p3).
 
 ###muddy-children-kg
 Muddy Children Puzzle by (Fagin et al. 1995)
@@ -70,11 +86,40 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 
 ###wordrooms
 
+>WordRoom(m, n) is a variation of the collaboration through
+>communication example. It involves two agents a and b that
+>must find out a hidden word from a list of n possible words.
+>The words can have at most 7 letters with the i-th letter of
+>the word being in room ri , i = 1, . . . , 7. The two agents
+>can move from a corridor to each of the rooms, and from
+>any room back to the corridor. There is no direct connection
+>among rooms, the two agents cannot be in the same room,
+>and they both start in the corridor. The agents have sensors
+>to find out the letter in a room provided that they are in
+>the room, and they can communicate the truth of the literals
+>Kxli where x is one of the two agents and li expresses that l
+>is the i-th letter of the hidden word. The former amounts to
+>14 sensing actions of the form sense(x, [li , l0 i , l00 i , . . .]) with
+>the precondition that agent x is in room i, and where l, l 0
+>, . . . are the different letters that may appear at position
+>i of some of the n words. The parameter m in problem
+>WordRoom(m, n) stands for the total number of li atoms.
+>There are also 7 actions sense(a, [Kbli , Kbl 0 i , Kbl 00 i , . . .])
+>where b communicates what he knows about room i to a,
+>and similarly, 7 actions where a communicates to b. If we
+>add the 14 actions for each agent moving from a room to the
+>corridor and back, the total pool of actions is 56. The shortest
+>plan for these problems is interesting when there is a lot
+>of overlap among the n possible words, and in particular,
+>when it may be more efficient for an agent to communicate
+>not the letters that he has observed, but the letters that he can
+>derive from what he knows.
+
 ##ghosh-etal-JAR:
 The controller verification problems by Ghosh, Dasgupta and Ramesh
 ("Automated Planning as an Early Verification Tool for Distributed
-Control", Journal of Automated Reasoning vol. 54, 2015), sourced from
-http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
+Control", Journal of Automated Reasoning vol. 54, 2015). The original problems can be found at (http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz). The repository contains the equivalent compiled problems by Ivankovic and Haslum(IJCAI, 2015): "cc1" is the compilatioin into STRIPS originally proposed by Ghosh et al (2015): "cc2" is the compilation into STRIPS with axioms.
+
 ###acc-cc1-ghosh-etal
 
 >The ACC is designed to take away the burden of adjusting the speed of the vehicle from the driver, mostly
@@ -86,8 +131,15 @@ http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 >leading vehicle at current speed. The speed control mode may be active when there is no obstructing traffic.
 >The time gap mode may be active whenever obstructing traffic is detected by the vehicle’s radar.
 
+###acc-cc2-ghosh-etal
+A reformulation of acc-cc1-ghosh-etal using axioms.
+
 ###doorexample-broken-ghosh-etal-noaxioms
+###doorexample-broken-ghosh-etal
+A reformulation of doorexample-broken-ghosh-etal-noaxioms using axioms.
 ###doorexample-fixed-ghosh-etal-noaxioms
+###doorexample-fixed-ghosh-etal
+A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 ###grid-cc1-ghosh-etal
 
 >The GRID domain is a synthetic planning domain loosely based on cellular automata and
@@ -99,6 +151,8 @@ http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz.
 >the processors in the GRID via their communication ports. Once created, each new job is
 >transferred to a processor (or rejected by the grid as a whole) after a distributed depth-first
 >search occurs automatically for an available handler.
+###grid-cc2-ghosh-etal
+A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 
 ## IPC Domains
 Domains with derived predicates used in IPC-4.
@@ -121,11 +175,17 @@ For details, please see Hoffmann, Jörg, et al
 ###psr-middle-compiled
 A compiled, axiom-free version of psr-middle.
 
+###PROMELA
+>Here the task is to validate properties in systems of communicating processes (often
+>communication protocols), encoded in the Promela language. Promela (PROcess MEta LAnguage)
+>is the input language of the model checker SPIN (Holzmann, 2003). The language is loosely based
+>on Dijkstra’s guarded command language, borrowing some notation from Hoare’s CSP language.
+>One important property check is to detect deadlock states, where none of the processes can apply
+>a transition. For example, a process may be blocked when trying to read data from an empty
+>communication channel. Edelkamp (2003a) developed an automatic translation from Promela into
+>PDDL, which was extended to generate the competition examples.
 ###optical-telegraphs
-> Developed by Stefan Edelkamp. Planners are asked to find deadlocks in communication protocols, translated into PDDL from the Promela specification language. Deadlocks were specified via blocked transitions and processes. The representation chosen for the processes are finite state transition systems, while communication channels are modelled by queues with moving head and tail pointers. The communication protocols used in IPC-4 were the dining philosophers problem, as well as an optical telegraph routing problem.
 ###optical-telegraphs-compiled
 A compiled, axiom-free version of optical-telegraphs.
 
 ###philosophers
-###philosophers-compiled
-A compiled, axiom-free version of philosophers.
