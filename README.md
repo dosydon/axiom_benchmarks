@@ -1,4 +1,5 @@
 # Planning Domains with Derived Predicates
+The repository contains PDDL planning problems with derievd predicates and axioms.
 
 ## Domains by Ivankovic and Haslum(IJCAI, 2015)
 Domains by Franc Ivankovic and Patric Haslum, used under CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0/legalcode).
@@ -6,15 +7,24 @@ Domains were sourced from (http://users.cecs.anu.edu.au/~patrik/tmp/fd-axiom-awa
 
 ###sokoban-axioms:
 A formulation of the Sokoban domain using axioms. There are two
-encodings: one uses only classical (STRIPS) PDDL and axioms, the
+encodings originally provided: one uses only classical (STRIPS) PDDL and axioms, the
 other uses "Functional STRIPS" (i.e., object-valued fluents, a la
-PDDL 3.1). More on this below.
+PDDL 3.1). This repository contains only the classical PDDL version.
 
 ###psr-middle-noce:
 The PSR middle-sized problem set from IPC 2004, formulation with
 axioms but without conditional effects.
 
 ###mincut
+>Consider an undirected graph, with a designated source node
+>s and target node t. K “roadblocks” are located on the edges
+>of the graph, and can move between adjacent edges. (More
+>than one roadblock can occupy the same edge, and one can
+>pass another on the edge.) The goal is to move the roadblocks
+>so that there is no unblocked path from the source to the tar-
+>get node. In other words, a goal state identifies an s-t-cut of
+>size ≤ K. Hence, we call it the Min-Cut domain.
+>><cite> Ivankovic and Haslum(IJCAI, 2015) </cite>
 
 ###trapping game
 >As an example of a pseudo-adversarial domain with a more
@@ -28,13 +38,14 @@ axioms but without conditional effects.
 >graph (though not the node the cat currently occupies). The
 >cat wins if it reaches an exit, and the blocker wins if the cat is
 >trapped (i.e., no longer able to reach an exit).
+>><cite> Ivankovic and Haslum(IJCAI, 2015) </cite>
 
 ##Domains by Filipos Kominis and Hector Geffner (ICAPS 2015)
 Problems by Filippos Kominis and Hector Geffner, from their paper
 "Beliefs in Multiagent Planning: From One Agent to Many" (ICAPS 2015).
 These are cooperative multi-agent planning with partial observability
 and nested beliefs, compiled into planning with axioms. They were
-source from (http://www.dtic.upf.edu/~fkominis/).
+sourced from (http://www.dtic.upf.edu/~fkominis/). The permission to redestribute was granted from the authors.
 
 ###collab-and-comm-kg
 >As a third example, we consider a scenario where two agents
@@ -61,9 +72,10 @@ source from (http://www.dtic.upf.edu/~fkominis/).
 >doesn’t see this block either at p3, agent a will then know
 >that block b1 must be in p4 once b conveys to a the relevant
 >piece of information; in this case ¬Kbin(b1, p3).
+>><cite> Kominis and Geffner(ICAPS, 2015) </cite>
 
 ###muddy-children-kg
-Muddy Children Puzzle by (Fagin et al. 1995)
+A variation of muddy-child.
 
 ###muddy-child-kg
 
@@ -72,6 +84,7 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >or not. For this he can ask individually each other child i
 >whether i knows that he is muddy, with all other children
 >listening the response.
+>><cite> Kominis and Geffner(ICAPS, 2015) </cite>
 
 ###sum-kg
 
@@ -83,6 +96,7 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >forehead between 1 and n. It is known that one of the numbers
 >must be the sum of the other two. In addition, each agent
 >can see the numbers on the other agent’s foreheads, and can
+>><cite> Kominis and Geffner(ICAPS, 2015) </cite>
 
 ###wordrooms
 
@@ -114,6 +128,7 @@ Muddy Children Puzzle by (Fagin et al. 1995)
 >when it may be more efficient for an agent to communicate
 >not the letters that he has observed, but the letters that he can
 >derive from what he knows.
+>><cite> Kominis and Geffner(ICAPS, 2015) </cite>
 
 ##ghosh-etal-JAR:
 The controller verification problems by Ghosh, Dasgupta and Ramesh
@@ -130,16 +145,21 @@ Control", Journal of Automated Reasoning vol. 54, 2015). The original problems c
 >in the front. The time gap is defined as the time taken by a following vehicle to cover the distance from a
 >leading vehicle at current speed. The speed control mode may be active when there is no obstructing traffic.
 >The time gap mode may be active whenever obstructing traffic is detected by the vehicle’s radar.
+>><cite> Ghosh et al (2015) </cite>
 
 ###acc-cc2-ghosh-etal
 A reformulation of acc-cc1-ghosh-etal using axioms.
 
 ###doorexample-broken-ghosh-etal-noaxioms
+A door example used in Ghosh et al (2015).
 ###doorexample-broken-ghosh-etal
 A reformulation of doorexample-broken-ghosh-etal-noaxioms using axioms.
+
 ###doorexample-fixed-ghosh-etal-noaxioms
+A door example used in Ghosh et al (2015).
 ###doorexample-fixed-ghosh-etal
 A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
+
 ###grid-cc1-ghosh-etal
 
 >The GRID domain is a synthetic planning domain loosely based on cellular automata and
@@ -151,6 +171,8 @@ A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 >the processors in the GRID via their communication ports. Once created, each new job is
 >transferred to a processor (or rejected by the grid as a whole) after a distributed depth-first
 >search occurs automatically for an available handler.
+>><cite> Ghosh et al (2015) </cite>
+
 ###grid-cc2-ghosh-etal
 A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 
@@ -158,6 +180,7 @@ A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 Domains with derived predicates used in IPC-4.
 For details, please see Hoffmann, Jörg, et al
 ("Engineering benchmarks for planning: the domains used in the deterministic part of IPC-4", Journal of Artificial Intelligence Research 26, 2006).
+
 ###psr-middle
 >The task in PSR (power supply restoration) is to reconfigure a faulty power distribution
 >network so as to resupply customers affected by the faults. The network consists of electric
@@ -171,6 +194,7 @@ For details, please see Hoffmann, Jörg, et al
 >interest in the field of power distribution, and has been investigated by the AI community for
 >a long time, including from an AI planning standpoint (Thi´ebaux, Cordier, Jehl, & Krivine, 1996;
 >Thi´ebaux & Cordier, 2001; Bertoli, Cimatti, Slaney, & Thi´ebaux, 2002; Bonet & Thi´ebaux, 2003).
+>><cite> Hoffmann, Jörg, et al (2015) </cite>
 
 ###psr-middle-compiled
 A compiled, axiom-free version of psr-middle.
@@ -184,8 +208,11 @@ A compiled, axiom-free version of psr-middle.
 >a transition. For example, a process may be blocked when trying to read data from an empty
 >communication channel. Edelkamp (2003a) developed an automatic translation from Promela into
 >PDDL, which was extended to generate the competition examples.
+>><cite> Hoffmann, Jörg, et al (2015) </cite>
+
 ###optical-telegraphs
 ###optical-telegraphs-compiled
 A compiled, axiom-free version of optical-telegraphs.
 
 ###philosophers
+###philosophers-compiled
