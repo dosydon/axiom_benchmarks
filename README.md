@@ -26,7 +26,7 @@ axioms but without conditional effects.
 >size ≤ K. Hence, we call it the Min-Cut domain.
 >>  Ivankovic and Haslum(IJCAI, 2015) 
 
-###trapping game
+### trapping game
 >As an example of a pseudo-adversarial domain with a more
 >complex opponent strategy, we consider a game of two players,
 >called the “blocker” and the “cat”. The cat moves from
@@ -47,7 +47,7 @@ These are cooperative multi-agent planning with partial observability
 and nested beliefs, compiled into planning with axioms. They were
 sourced from (http://www.dtic.upf.edu/~fkominis/). The permission to redestribute was granted from the authors.
 
-###collab-and-comm-kg
+### collab-and-comm-kg
 >As a third example, we consider a scenario where two agents
 >volunteer information to each other in order to accomplish
 >a task faster that would otherwise be possible without information
@@ -74,10 +74,10 @@ sourced from (http://www.dtic.upf.edu/~fkominis/). The permission to redestribut
 >piece of information; in this case ¬Kbin(b1, p3).
 >>  Kominis and Geffner(ICAPS, 2015) 
 
-###muddy-children-kg
+### muddy-children-kg
 A variation of muddy-child.
 
-###muddy-child-kg
+### muddy-child-kg
 
 >MuddyChild(n, m) is a reformulation of MuddyChildren
 >where a particular child must find out whether he is muddy
@@ -86,7 +86,7 @@ A variation of muddy-child.
 >listening the response.
 >>  Kominis and Geffner(ICAPS, 2015) 
 
-###sum-kg
+### sum-kg
 
 >Sum(n) is a domain based on ”What is the Sum?” (van Ditmarsch,
 >van der Hoek, and Kooi 2007b), which in turn borrows
@@ -98,7 +98,7 @@ A variation of muddy-child.
 >can see the numbers on the other agent’s foreheads, and can
 >>  Kominis and Geffner(ICAPS, 2015) 
 
-###wordrooms
+### wordrooms
 
 >WordRoom(m, n) is a variation of the collaboration through
 >communication example. It involves two agents a and b that
@@ -135,7 +135,7 @@ The controller verification problems by Ghosh, Dasgupta and Ramesh
 ("Automated Planning as an Early Verification Tool for Distributed
 Control", Journal of Automated Reasoning vol. 54, 2015). The original problems can be found at (http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz). The repository contains the equivalent compiled problems by Ivankovic and Haslum(IJCAI, 2015): "cc1" is the compilatioin into STRIPS originally proposed by Ghosh et al (2015): "cc2" is the compilation into STRIPS with axioms.
 
-###acc-cc1-ghosh-etal
+### acc-cc1-ghosh-etal
 
 >The ACC is designed to take away the burden of adjusting the speed of the vehicle from the driver, mostly
 >under light traffic conditions. The ACC operates in two modes - the speed control mode and the time gap
@@ -147,20 +147,20 @@ Control", Journal of Automated Reasoning vol. 54, 2015). The original problems c
 >The time gap mode may be active whenever obstructing traffic is detected by the vehicle’s radar.
 >>  Ghosh et al (2015) 
 
-###acc-cc2-ghosh-etal
+### acc-cc2-ghosh-etal
 A reformulation of acc-cc1-ghosh-etal using axioms.
 
-###doorexample-broken-ghosh-etal-noaxioms
+### doorexample-broken-ghosh-etal-noaxioms
 A door example used in Ghosh et al (2015).
-###doorexample-broken-ghosh-etal
+### doorexample-broken-ghosh-etal
 A reformulation of doorexample-broken-ghosh-etal-noaxioms using axioms.
 
-###doorexample-fixed-ghosh-etal-noaxioms
+### doorexample-fixed-ghosh-etal-noaxioms
 A door example used in Ghosh et al (2015).
-###doorexample-fixed-ghosh-etal
+### doorexample-fixed-ghosh-etal
 A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 
-###grid-cc1-ghosh-etal
+### grid-cc1-ghosh-etal
 
 >The GRID domain is a synthetic planning domain loosely based on cellular automata and
 >incorporates a parallel depth first search protocol for added variety. A problem instance in
@@ -173,7 +173,7 @@ A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 >search occurs automatically for an available handler.
 >>  Ghosh et al (2015) 
 
-###grid-cc2-ghosh-etal
+### grid-cc2-ghosh-etal
 A reformulation of doorexample-fixed-ghosh-etal-noaxioms using axioms.
 
 ## IPC Domains
@@ -182,7 +182,7 @@ They were sourced from (http://idm-lab.org/wiki/icaps/ipc2004/deterministic/doma
 For details, please see Hoffmann, Jörg, et al
 ("Engineering benchmarks for planning: the domains used in the deterministic part of IPC-4", Journal of Artificial Intelligence Research 26, 2006).
 
-###psr-middle
+### psr-middle
 >The task in PSR (power supply restoration) is to reconfigure a faulty power distribution
 >network so as to resupply customers affected by the faults. The network consists of electric
 >lines connected by switches and fed via a number of power sources that are equipped with circuitbreakers.
@@ -197,10 +197,10 @@ For details, please see Hoffmann, Jörg, et al
 >Thi´ebaux & Cordier, 2001; Bertoli, Cimatti, Slaney, & Thi´ebaux, 2002; Bonet & Thi´ebaux, 2003).
 >>  Hoffmann, Jörg, et al (2015) 
 
-###psr-middle-compiled
+### psr-middle-compiled
 A compiled, axiom-free version of psr-middle.
 
-###PROMELA
+### PROMELA
 >Here the task is to validate properties in systems of communicating processes (often
 >communication protocols), encoded in the Promela language. Promela (PROcess MEta LAnguage)
 >is the input language of the model checker SPIN (Holzmann, 2003). The language is loosely based
@@ -211,12 +211,12 @@ A compiled, axiom-free version of psr-middle.
 >PDDL, which was extended to generate the competition examples.
 >>  Hoffmann, Jörg, et al (2015) 
 
-###optical-telegraphs
+### optical-telegraphs
 A verification domain for Optical Telegraphs.
-###optical-telegraphs-compiled
+### optical-telegraphs-compiled
 A compiled, axiom-free version of optical-telegraphs.
 
-###philosophers
+### philosophers
 A verification domain for Dining Philosopher problem (https://en.wikipedia.org/wiki/Dining_philosophers_problem).
-###philosophers-compiled
+### philosophers-compiled
 A compiled, axiom-free version of philosophers.
