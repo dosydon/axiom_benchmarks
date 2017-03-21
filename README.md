@@ -130,7 +130,7 @@ A variation of muddy-child.
 >derive from what he knows.
 >>  Kominis and Geffner(ICAPS, 2015) 
 
-##ghosh-etal-JAR:
+## ghosh-etal-JAR:
 The controller verification problems by Ghosh, Dasgupta and Ramesh
 ("Automated Planning as an Early Verification Tool for Distributed
 Control", Journal of Automated Reasoning vol. 54, 2015). The original problems can be found at (http://www.facweb.iitkgp.ernet.in/~pallab/PAPLAN.tar.gz). The repository contains the equivalent compiled problems by Ivankovic and Haslum(IJCAI, 2015): "cc1" is the compilatioin into STRIPS originally proposed by Ghosh et al (2015): "cc2" is the compilation into STRIPS with axioms.
