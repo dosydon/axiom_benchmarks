@@ -5,17 +5,17 @@ The repository contains PDDL planning problems with derievd predicates and axiom
 Domains by Franc Ivankovic and Patric Haslum, used under CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 Domains were sourced from (http://users.cecs.anu.edu.au/~patrik/tmp/fd-axiom-aware.tar.gz).
 
-###sokoban-axioms:
+### sokoban-axioms:
 A formulation of the Sokoban domain using axioms. There are two
 encodings originally provided: one uses only classical (STRIPS) PDDL and axioms, the
 other uses "Functional STRIPS" (i.e., object-valued fluents, a la
 PDDL 3.1). This repository contains only the classical PDDL version.
 
-###psr-middle-noce:
+### psr-middle-noce:
 The PSR middle-sized problem set from IPC 2004, formulation with
 axioms but without conditional effects.
 
-###mincut
+### mincut
 >Consider an undirected graph, with a designated source node
 >s and target node t. K “roadblocks” are located on the edges
 >of the graph, and can move between adjacent edges. (More
